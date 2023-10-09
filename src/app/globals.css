@@ -53,14 +53,14 @@ body {
 
 .modal:where(.show) {
   z-index: 50;
-  animation: bouncein 300ms ease;
+  animation: bouncein 600ms cubic-bezier(0.37, 0.96, 0.6, 1.04) both;
 }
 .modal:where(.hide) {
   z-index: -50;
-  animation: bounceout 700ms ease;
+  animation: bounceout 700ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-mark {
-  all: unset;
-  color: rgb(157, 255, 186);
+.lazy_input {
+  background-color: #26272c;
+  line-height: 2rem;
 }
