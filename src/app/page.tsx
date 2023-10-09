@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center">
-      <div className=" relative bg-black flex flex-col  items-center justify-center w-[40rem] h-[14rem] border border-neutral-700 overflow-hidden rounded-lg shadow-con">
+      <div className=" relative bg-black flex flex-col  items-center justify-center w-screen md:w-[40rem] h-[14rem] border border-neutral-700 overflow-hidden rounded-lg shadow-con">
         <div className="absolute -z-40 bg-black w-full h-full top-0 left-0 "></div>
         <Modal modalState={showModal} toggleModal={handleToggleModal} />
         <div className=" absolute p-4 h-[70%] w-[95%] top-[1rem] shadow-xl shadow-black/30 bg-[#232428]/70 border border-neutral-500 rounded-md backdrop-blur-md flex justify-between flex-col ">

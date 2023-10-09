@@ -11,7 +11,7 @@ export default function Modal({ modalState, toggleModal }: ModalProps) {
     <div
       className={`${
         modalState ? " show animate__zoomIn animate__fast" : "hide"
-      } modal animate__animated grid grid-rows-2 gap-[1px] absolute top-0 left-0 w-full bg-[#0e0e0e] h-full place-content-center `}
+      } modal animate__animated grid grid-rows-2 gap-[1px] absolute top-0 left-0 w-screen md:w-[40rem] h-[14rem] bg-[#0e0e0e]  place-content-center `}
     >
       <button
         onClick={toggleModal}
@@ -19,10 +19,10 @@ export default function Modal({ modalState, toggleModal }: ModalProps) {
       >
         <RxUpdate size={14} />
       </button>
-      <section className="bg-[#212226] flex justify-center items-center text-xl ">
-        Request access to see your capture on the other side.
+      <section className="bg-[#212226] p-4 flex justify-center w-screen md:w-full items-center text-xl ">
+        <p>Request access to see your capture on the other side.</p>
       </section>
-      <section className="bg-[#1A1B1F] flex items-center gap-4 justify-center w-[40rem] border-t border-t-neutral-700">
+      <section className="bg-[#1A1B1F] w-screen flex-row flex items-center gap-4 justify-center md:w-[40rem] border-t border-t-neutral-700">
         <form>
           <input
             className="lazy_input border-none rounded-md px-4 color-[#8a8c93] h-fit"
