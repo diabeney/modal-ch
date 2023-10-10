@@ -11,7 +11,7 @@ export default function Modal({ modalState, toggleModal }: ModalProps) {
     <div
       className={`${
         modalState ? " show animate__zoomIn animate__fast" : "hide"
-      } modal animate__animated grid grid-rows-2 gap-[1px] absolute top-0 left-0 w-screen md:w-[40rem] h-[14rem] bg-[#0e0e0e]  place-content-center `}
+      } modal animate__animated grid grid-rows-2 gap-[1px] absolute top-0 left-0 w-screen md:w-[40rem] h-full bg-[#0e0e0e]  place-content-center `}
     >
       <button
         onClick={toggleModal}

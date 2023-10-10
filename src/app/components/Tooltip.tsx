@@ -7,7 +7,7 @@ import { BsAlt } from "react-icons/bs";
 
 export default function ToolTip() {
   return (
-    <div className=" tip absolute bottom-[20%] gap-2 right-4 p-4 w-[15rem] backdrop-blur-sm saturate-50 border bg-[#1A1B1F]/70 border-neutral-400 rounded-md z-[60]">
+    <div className=" tip absolute bottom-[100%] gap-2 right-4 p-4 w-[15rem] backdrop-blur-sm saturate-50 border bg-[#1A1B1F]/70 border-neutral-400 rounded-md z-[60]">
       <section className=" text-sm text-neutral-400 flex justify-between">
         <span className=" flex justify-center items-center gap-1">
           <p>
